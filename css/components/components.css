@@ -1247,6 +1247,53 @@
   }
 }
 
+.news_table_wrapper .table_tab {
+  border-bottom: 1px solid var(--text-c8);
+}
+
+.news_table_wrapper .table_tab thead th {
+  text-align: center;
+  width: 20rem;
+  height: 5.4rem;
+  cursor: pointer;
+  white-space: nowrap;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.news_table_wrapper .table_tab thead th.active_th {
+  background: var(--text-f7);
+}
+
+.news_table_wrapper table td,
+.news_table_wrapper table th {
+  font-size: 1.4rem;
+  vertical-align: middle;
+  font-weight: bold;
+  font-family: yugothib;
+}
+
+.news_table_wrapper table td {
+  border-bottom: 1px solid var(--text-c8);
+  padding-top: 3.7rem;
+  padding-bottom: 3.7rem;
+  white-space: nowrap;
+}
+
+.news_table_wrapper table td:nth-child(1) {
+  color: var(--text-48);
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.news_table_wrapper table tbody td:nth-child(2) {
+  color: var(--text-f2);
+}
+
+.news_table_wrapper table tbody td:nth-child(2).td_47 {
+  color: var(--text-47);
+}
+
 .menu_card_wrapper {
   margin-bottom: 10rem;
 }
@@ -1883,6 +1930,18 @@
 
 .pagination_wrapper {
   margin-bottom: 2.4rem;
+}
+
+.pagination_wrapper.my_sizer {
+  margin-top: 6.4rem;
+  margin-bottom: 10rem;
+}
+
+@media (max-width: 600px) {
+  .pagination_wrapper.my_sizer {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+  }
 }
 
 .pagination_wrapper.mb_page_foot {

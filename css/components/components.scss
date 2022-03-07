@@ -932,6 +932,57 @@
     }
   }
 }
+.news_table_wrapper {
+  .table_tab {
+    border-bottom: 1px solid var(--text-c8);
+    thead {
+      th {
+        text-align: center;
+        width: 20rem;
+        height: 5.4rem;
+        cursor: pointer;
+        white-space: nowrap;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        &.active_th {
+          background: var(--text-f7);
+        }
+      }
+    }
+  }
+  table {
+    td,
+    th {
+      font-size: 1.4rem;
+      vertical-align: middle;
+      font-weight: bold;
+      font-family: yugothib;
+    }
+    td {
+      border-bottom: 1px solid var(--text-c8);
+      padding-top: 3.7rem;
+      padding-bottom: 3.7rem;
+      white-space: nowrap;
+      &:nth-child(1) {
+        color: var(--text-48);
+        padding-left: 4rem;
+        padding-right: 4rem;
+      }
+      &:nth-child(2) {
+      }
+    }
+
+    tbody {
+      td:nth-child(2) {
+        color: var(--text-f2);
+        &.td_47 {
+          color: var(--text-47);
+        }
+      }
+    }
+  }
+}
+
 // ....................Table Components ........................End
 
 // .....................Card Components .........................
@@ -1363,7 +1414,7 @@
     }
   }
   @media (max-width: 991px) {
-    .flex_box{
+    .flex_box {
       width: 100%;
     }
   }
@@ -1381,8 +1432,8 @@
           text-align: center;
           margin-bottom: 2rem;
         }
-        @media (max-width: 600px){
-          img{
+        @media (max-width: 600px) {
+          img {
             width: 100%;
           }
         }
@@ -1396,8 +1447,8 @@
           text-align: center;
           margin-bottom: 2rem;
         }
-        @media (max-width: 600px){
-          img{
+        @media (max-width: 600px) {
+          img {
             width: 100%;
           }
         }
@@ -1422,6 +1473,14 @@
 // ..........................Pagination ..................
 .pagination_wrapper {
   margin-bottom: 2.4rem;
+  &.my_sizer {
+    margin-top: 6.4rem;
+    margin-bottom: 10rem;
+    @media (max-width: 600px) {
+      margin-top: 3rem;
+      margin-bottom: 5rem;
+    }
+  }
   &.mb_page_foot {
     margin-bottom: 3.4rem;
   }
