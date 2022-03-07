@@ -1035,6 +1035,30 @@
   }
 }
 
+.content_policy_list_wrapper {
+  margin-bottom: 9.5rem;
+}
+
+@media (max-width: 1199px) {
+  .content_policy_list_wrapper {
+    margin-bottom: 5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .content_policy_list_wrapper {
+    margin-bottom: 2;
+  }
+}
+
+.content_policy_list_wrapper > li {
+  margin-bottom: 5.3rem;
+}
+
+.content_policy_list_wrapper > li:last-child {
+  margin-bottom: 0px;
+}
+
 .section_table_wrapper {
   background: rgba(112, 112, 112, 0.5);
   position: relative;
