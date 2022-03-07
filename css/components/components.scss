@@ -639,6 +639,122 @@
     }
   }
 }
+
+.health_support_content_wrapper {
+  padding-bottom: 7.4rem;
+  border-bottom: 1px solid var(--text-5b);
+  .support_img1 {
+    min-height: 34.3rem;
+  }
+  .support_img2 {
+    min-height: 30.2rem;
+  }
+  .support_img3 {
+    min-height: 21.7rem;
+  }
+  .health_support_row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    & > .col_item {
+      &:nth-of-type(1) {
+        min-width: 30rem;
+        margin-right: 1.4rem;
+        @media (max-width: 600px) {
+          min-width: 100%;
+          margin-right: 0rem;
+          img {
+            width: 100%;
+            object-fit: contain;
+          }
+        }
+      }
+      &:nth-of-type(2) {
+        min-width: 40.2rem;
+        @media (max-width: 600px) {
+          min-width: 100%;
+          img {
+            width: 100%;
+            object-fit: contain;
+          }
+        }
+      }
+      &:nth-of-type(3) {
+        min-width: 33.7rem;
+        margin-left: -1rem;
+        @media (max-width: 600px) {
+          min-width: 100%;
+          margin-left: 0rem;
+          img {
+            width: 100%;
+            object-fit: contain;
+          }
+        }
+      }
+    }
+  }
+}
+.firmly_content_wrapper {
+  margin-bottom: 8rem;
+  border-bottom: 1px solid var(--text-5b);
+  .flex_box {
+    @media (max-width: 1299px) {
+      width: 100%;
+      flex-grow: 1;
+      margin-bottom: 4rem;
+      @media (max-width: 600px) {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+  .media_box {
+    img {
+      width: 67.3rem;
+      height: 35.5rem;
+      display: block;
+      @media (max-width: 1299px) {
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        height: 25.5rem;
+        object-fit: contain;
+        @media (max-width: 600px) {
+          height: 15rem;
+        }
+        @media (max-width: 400px) {
+          height: 11rem;
+        }
+      }
+    }
+  }
+  .flex_box_content {
+    min-width: 60rem;
+    margin-left: -4.5rem;
+    @media (max-width: 1299px) {
+      margin-left: 0px;
+      min-width: 100%;
+      width: 100%;
+    }
+  }
+  .firmly_svg_body {
+    text-align: center;
+    padding: 8rem 1rem;
+    @media (max-width: 1299px) {
+      padding: 4rem 1rem;
+      img {
+        height: 40rem;
+        object-position: center top;
+      }
+    }
+    @media (max-width: 600px) {
+      padding: 1rem;
+      img {
+        height: 25rem;
+        object-position: center top;
+      }
+    }
+  }
+}
 // ...................Content list Components. .................End
 
 // ....................Table Components ........................
@@ -1220,6 +1336,77 @@
   }
 }
 // .....................Card Components .........................End
+
+// ......................List Components .....................
+
+.list_content_wrapper {
+  padding-bottom: 10rem;
+  @media (max-width: 1299px) {
+    padding-bottom: 5rem;
+  }
+  @media (max-width: 600px) {
+    padding-bottom: 3rem;
+  }
+  * {
+    font-family: yugothib;
+  }
+  .content_title {
+    svg {
+      margin-right: 2.25rem;
+    }
+    margin-bottom: 2rem;
+  }
+  .content_body {
+    h5 {
+      line-height: 3.6rem;
+      font-weight: normal;
+    }
+  }
+  @media (max-width: 991px) {
+    .flex_box{
+      width: 100%;
+    }
+  }
+
+  .list_item {
+    margin-bottom: 5.8rem;
+    &:last-child {
+      margin-bottom: 0px;
+    }
+    &:nth-child(odd) {
+      .media_box {
+        margin-right: 8rem;
+        @media (max-width: 991px) {
+          margin-right: 0px;
+          text-align: center;
+          margin-bottom: 2rem;
+        }
+        @media (max-width: 600px){
+          img{
+            width: 100%;
+          }
+        }
+      }
+    }
+    &:nth-child(even) {
+      .media_box {
+        margin-left: 8rem;
+        @media (max-width: 991px) {
+          margin-left: auto;
+          text-align: center;
+          margin-bottom: 2rem;
+        }
+        @media (max-width: 600px){
+          img{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// ......................List Components .....................End
 
 // .......................border line ..................
 .border_line {
