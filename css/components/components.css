@@ -623,6 +623,21 @@
   height: 4rem;
 }
 
+.btn_member {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--text-white);
+  height: 7rem;
+  width: 30rem;
+  border-radius: 5px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#005ea5), to(#0095e2));
+  background: linear-gradient(#005ea5 0%, #0095e2 100%);
+  -webkit-box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2);
+  border: none;
+  font-family: trebuc;
+}
+
 .user_progress_box {
   padding-top: 3.2rem;
   padding-bottom: 6.3rem;
@@ -798,6 +813,58 @@
   .affiliate_content_wrapper .affiliate_list .list_body .table_flex_box .table_media {
     min-width: 100%;
   }
+}
+
+.top_section_content_wrapper {
+  font-family: yugothib;
+}
+
+.top_section_content_wrapper * {
+  line-height: 6rem;
+}
+
+.top_section_content_wrapper .col_content_wrapper {
+  padding-top: 11.6rem;
+  padding-right: 12.1rem;
+}
+
+.top_section_content_wrapper .col_content_wrapper .logo_inner {
+  margin-bottom: 3.4rem;
+}
+
+.top_section_content_wrapper .top_section_img_box img {
+  margin-top: -7rem;
+}
+
+.top_section_content_wrapper .mark_text_wrapper {
+  font-family: yugothib;
+}
+
+.top_section_content_wrapper .mark_text_wrapper span {
+  position: relative;
+  color: #333e48;
+}
+
+.top_section_content_wrapper .mark_text_wrapper span:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  width: 18.4rem;
+  height: 2rem;
+  background: var(--text-50);
+  top: 50%;
+  left: 0;
+  z-index: -1;
+}
+
+.top_section_content_wrapper .mark_text_wrapper span:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  width: 30rem;
+  height: 2rem;
+  background: var(--text-50);
+  top: 50%;
+  left: 0;
+  z-index: -1;
 }
 
 .section_table_wrapper {

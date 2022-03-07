@@ -56,9 +56,10 @@
   --text-1e: #ff771e;
   --text-c0: #983c00;
   --text-83: #838383;
-  --text-2f: #29A62F;
-  --text-60: #24AF60;
-  --text-28: #005D28;
+  --text-2f: #29a62f;
+  --text-60: #24af60;
+  --text-28: #005d28;
+  --text-50: #fff500;
 }
 // ............body..........
 body {
@@ -103,11 +104,24 @@ body {
   padding-top: 0px;
   padding-bottom: 0px;
   box-shadow: none;
+  &.bg_linear {
+    background: linear-gradient(
+      #fff 0%,
+      #fff 43.35%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
   .navbar_list {
     .nav-item {
       margin-right: 8.3rem;
       padding-top: 1.8rem;
       padding-bottom: 1.8rem;
+      font-family: trebuc;
+      letter-spacing: 0.1em;
+      font-weight: bold;
+      &.nav_mr_4 {
+        margin-right: 4rem;
+      }
       &.nav_item_md {
         margin-right: 6.5rem;
         &:last-of-type(2) {
@@ -115,7 +129,7 @@ body {
         }
       }
       @media (max-width: 1199px) {
-        margin-right: 0px!important;
+        margin-right: 0px !important;
         padding-top: 0.8rem;
         padding-bottom: 0.8rem;
       }
@@ -187,11 +201,20 @@ h1 {
 }
 h2 {
   font-size: 3rem;
+  &.size_46 {
+    font-size: 4.6rem;
+  }
   @media (max-width: 600px) {
     font-size: 2rem;
   }
   &.mb_2 {
     margin-bottom: 2rem;
+  }
+  &.mb_5 {
+    margin-bottom: 5rem;
+    @media (max-width: 600px) {
+      margin-bottom: 3rem;
+    }
   }
 }
 h3 {
@@ -210,6 +233,9 @@ h3 {
     @media (max-width: 600px) {
       margin-bottom: 1rem;
     }
+  }
+  &.mb_4 {
+    margin-bottom: 4rem;
   }
   &.size_2 {
     font-size: 2rem;

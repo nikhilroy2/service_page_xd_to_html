@@ -59,9 +59,10 @@
   --text-1e: #ff771e;
   --text-c0: #983c00;
   --text-83: #838383;
-  --text-2f: #29A62F;
-  --text-60: #24AF60;
-  --text-28: #005D28;
+  --text-2f: #29a62f;
+  --text-60: #24af60;
+  --text-28: #005d28;
+  --text-50: #fff500;
 }
 
 body {
@@ -115,10 +116,22 @@ body {
           box-shadow: none;
 }
 
+.navbar.bg_linear {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(43.35%, #fff), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(#fff 0%, #fff 43.35%, rgba(255, 255, 255, 0) 100%);
+}
+
 .navbar .navbar_list .nav-item {
   margin-right: 8.3rem;
   padding-top: 1.8rem;
   padding-bottom: 1.8rem;
+  font-family: trebuc;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+
+.navbar .navbar_list .nav-item.nav_mr_4 {
+  margin-right: 4rem;
 }
 
 .navbar .navbar_list .nav-item.nav_item_md {
@@ -220,6 +233,10 @@ h2 {
   font-size: 3rem;
 }
 
+h2.size_46 {
+  font-size: 4.6rem;
+}
+
 @media (max-width: 600px) {
   h2 {
     font-size: 2rem;
@@ -228,6 +245,16 @@ h2 {
 
 h2.mb_2 {
   margin-bottom: 2rem;
+}
+
+h2.mb_5 {
+  margin-bottom: 5rem;
+}
+
+@media (max-width: 600px) {
+  h2.mb_5 {
+    margin-bottom: 3rem;
+  }
 }
 
 h3 {
@@ -258,6 +285,10 @@ h3.title_mb {
   h3.title_mb {
     margin-bottom: 1rem;
   }
+}
+
+h3.mb_4 {
+  margin-bottom: 4rem;
 }
 
 h3.size_2 {
