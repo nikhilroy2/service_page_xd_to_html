@@ -60,10 +60,10 @@
   --text-60: #24af60;
   --text-28: #005d28;
   --text-50: #fff500;
-  --text-f7: #F7F7F7;
-  --text-c8: #C8C8C8;
-  --text-f2: #00ABF2;
-  --text-47: #8FB247;
+  --text-f7: #f7f7f7;
+  --text-c8: #c8c8c8;
+  --text-f2: #00abf2;
+  --text-47: #8fb247;
 }
 // ............body..........
 body {
@@ -268,6 +268,13 @@ h4 {
   &.pb_with_border {
     padding-bottom: 2.4rem;
     border-bottom: 1px solid var(--text-70);
+  }
+  &.pb_with_border_2 {
+    padding-bottom: 12.2rem;
+    border-bottom: 1px solid var(--text-70);
+    @media (max-width: 600px) {
+      padding-bottom: 6.2rem;
+    }
   }
   &.mb_4 {
     margin-bottom: 4rem;
