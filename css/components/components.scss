@@ -43,6 +43,9 @@
   &.section_title_sub {
     padding-top: 5rem;
     padding-bottom: 2rem;
+    &.sub_sm {
+      padding-bottom: 1.2rem;
+    }
     @media (max-width: 600px) {
       padding-bottom: 1rem;
       padding-top: 2rem;
@@ -121,6 +124,16 @@
       }
       margin-bottom: 1.6rem;
     }
+  }
+}
+
+.news_table_row_content{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10rem;
+  margin-bottom: 9.7rem;
+  .news_table_first_row{
+    min-width: 36rem;
   }
 }
 // ....................Section title Components .................End
@@ -1399,6 +1412,32 @@
     font-size: 1.6rem;
     @media (max-width: 600px) {
       line-height: 2.6rem;
+    }
+  }
+}
+
+.works_card_wrapper {
+  background: var(--text-f3);
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  .works_card {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6.4rem;
+    .card_media {
+      width: 24rem;
+      height: 16rem;
+      background: var(--text-70);
+      margin-bottom: 1.3rem;
+    }
+    .hyper_link {
+      font-size: 1.2rem;
+      color: var(--text-7a);
+      display: inline-flex;
+      align-items: center;
+      svg {
+        margin-right: 0.45rem;
+      }
     }
   }
 }

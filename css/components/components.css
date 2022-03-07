@@ -62,6 +62,10 @@
   padding-bottom: 2rem;
 }
 
+.section_title.section_title_sub.sub_sm {
+  padding-bottom: 1.2rem;
+}
+
 @media (max-width: 600px) {
   .section_title.section_title_sub {
     padding-bottom: 1rem;
@@ -167,6 +171,21 @@
   padding: 1.3rem 2.4rem 1.3rem 2.4rem;
   font-size: 1.6rem;
   line-height: 3rem;
+}
+
+.news_table_row_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 10rem;
+  margin-bottom: 9.7rem;
+}
+
+.news_table_row_content .news_table_first_row {
+  min-width: 36rem;
 }
 
 .btn_be_action {
@@ -1857,6 +1876,44 @@
   .medical_care_card .paragraph {
     line-height: 2.6rem;
   }
+}
+
+.works_card_wrapper {
+  background: var(--text-f3);
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.works_card_wrapper .works_card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 6.4rem;
+}
+
+.works_card_wrapper .works_card .card_media {
+  width: 24rem;
+  height: 16rem;
+  background: var(--text-70);
+  margin-bottom: 1.3rem;
+}
+
+.works_card_wrapper .works_card .hyper_link {
+  font-size: 1.2rem;
+  color: var(--text-7a);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.works_card_wrapper .works_card .hyper_link svg {
+  margin-right: 0.45rem;
 }
 
 .list_content_wrapper {
