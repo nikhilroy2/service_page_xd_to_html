@@ -67,9 +67,9 @@
   --text-c8: #c8c8c8;
   --text-f2: #00abf2;
   --text-47: #8fb247;
-  --text-7a: #6C747A;
-  --text-cd: #0076CD;
-  --text-c1: #3384C1;
+  --text-7a: #6c747a;
+  --text-cd: #0076cd;
+  --text-c1: #3384c1;
 }
 
 body {
@@ -242,6 +242,18 @@ h2 {
 
 h2.size_46 {
   font-size: 4.6rem;
+}
+
+@media (max-width: 1199px) {
+  h2.size_46 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  h2.size_46 {
+    font-size: 2.5rem;
+  }
 }
 
 @media (max-width: 600px) {
