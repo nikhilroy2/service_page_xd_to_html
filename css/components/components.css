@@ -879,7 +879,6 @@
 }
 
 .top_section_content_wrapper {
-  border: solid;
   font-family: yugothib;
   border-bottom: 1px solid var(--text-5b);
 }
