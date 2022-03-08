@@ -48,7 +48,8 @@
 }
 
 .form_container .form-group input,
-.form_container .form-group select {
+.form_container .form-group select,
+.form_container .form-group textarea {
   border: 1px solid var(--text-cc) !important;
   padding: 1.2rem 2rem;
   font-size: 1.6rem;
@@ -62,7 +63,8 @@
 
 @media (max-width: 600px) {
   .form_container .form-group input,
-  .form_container .form-group select {
+  .form_container .form-group select,
+  .form_container .form-group textarea {
     padding: 0.3rem 1rem;
   }
 }
@@ -91,6 +93,53 @@
   max-width: 48rem;
   font-size: 1.8rem;
   font-family: yugothib;
+}
+
+.form_container .form_table.policy_table_form {
+  max-width: 100%;
+}
+
+.form_container .form_table.policy_table_form td {
+  vertical-align: baseline;
+}
+
+.form_container .form_table.policy_table_form td:nth-child(odd) {
+  width: 30rem;
+}
+
+@media (max-width: 1199px) {
+  .form_container .form_table.policy_table_form td:nth-child(odd) {
+    width: auto;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 600px) {
+  .form_container .form_table.policy_table_form td:nth-child(even) {
+    white-space: nowrap;
+  }
+  .form_container .form_table.policy_table_form td:nth-child(even) .form-control {
+    min-width: 25rem;
+  }
+}
+
+.form_container .form_table.policy_table_form .form-control {
+  background: var(--text-f4);
+  border: 1px solid var(--text-70);
+}
+
+.form_container .form_table.policy_table_form .text_area_control {
+  height: 24rem;
+  margin-bottom: 4.1rem;
+}
+
+.form_container .form_table.policy_table_form .policy_checkbox_wrapper {
+  font-size: 2rem;
+  margin-bottom: 6.1rem;
+}
+
+.form_container .form_table.policy_table_form .policy_checkbox_wrapper a {
+  color: var(--text-cd) !important;
 }
 
 .form_container .form_table * {

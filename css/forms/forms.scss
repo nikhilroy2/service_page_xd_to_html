@@ -41,7 +41,8 @@
     }
 
     input,
-    select {
+    select,
+    textarea {
       border: 1px solid var(--text-cc) !important;
       padding: 1.2rem 2rem;
       font-size: 1.6rem;
@@ -75,7 +76,42 @@
     max-width: 48rem;
     font-size: 1.8rem;
     font-family: yugothib;
-
+    &.policy_table_form {
+      max-width: 100%;
+      td {
+        vertical-align: baseline;
+      }
+      td:nth-child(odd) {
+        width: 30rem;
+        @media (max-width: 1199px){
+          width: auto;
+          white-space: nowrap;
+        }
+      }
+      td:nth-child(even) {
+        @media (max-width: 600px){
+          white-space: nowrap;
+          .form-control{
+            min-width: 25rem;
+          }
+        }
+      }
+      .form-control {
+        background: var(--text-f4);
+        border: 1px solid var(--text-70);
+      }
+      .text_area_control {
+        height: 24rem;
+        margin-bottom: 4.1rem;
+      }
+      .policy_checkbox_wrapper {
+        font-size: 2rem;
+        margin-bottom: 6.1rem;
+        a {
+          color: var(--text-cd) !important;
+        }
+      }
+    }
     * {
       color: var(--text-01);
       border: none;
@@ -89,9 +125,9 @@
       @media (max-width: 600px) {
         padding: 0.5rem 0.7rem;
       }
-      &.form_control_600{
+      &.form_control_600 {
         width: 60rem;
-        @media (max-width: 1199px){
+        @media (max-width: 1199px) {
           width: 100%;
         }
       }

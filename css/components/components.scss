@@ -13,6 +13,9 @@
       }
     }
   }
+  &.mb_md {
+    margin-bottom: 3.7rem;
+  }
   &.mb_sm {
     margin-bottom: 2.2rem;
   }
@@ -127,12 +130,12 @@
   }
 }
 
-.news_table_row_content{
+.news_table_row_content {
   display: flex;
   justify-content: space-between;
   margin-top: 10rem;
   margin-bottom: 9.7rem;
-  .news_table_first_row{
+  .news_table_first_row {
     min-width: 36rem;
   }
 }
@@ -195,6 +198,22 @@
     min-width: 18rem;
     @media (max-width: 600px) {
       min-width: 12rem;
+    }
+  }
+  &.lg_size_32 {
+    font-size: 2.4rem;
+    padding: 1.2rem;
+    min-width: 32rem;
+    @media (max-width: 600px) {
+      min-width: 15rem;
+      font-size: 1.8rem;
+      padding: 0.7rem;
+    }
+  }
+  &.mb_10 {
+    margin-bottom: 10rem;
+    @media (max-width: 600px) {
+      margin-bottom: 5rem;
     }
   }
   &.client_action_primary {
@@ -1514,19 +1533,18 @@
 
 // ......................List Components .....................End
 
-
 // .......................Jumbotron......................
 
-.jumbotron_user_info{
-  &.pd_sizer{
+.jumbotron_user_info {
+  &.pd_sizer {
     margin-top: 5rem;
     margin-bottom: 7.5rem;
   }
-  .section_body{
+  .section_body {
     background: var(--text-ec);
     padding: 3.5rem 2rem;
     text-align: center;
-    .text_number{
+    .text_number {
       padding-top: 2.1rem;
       padding-bottom: 1.3rem;
       font-weight: bold;
@@ -1534,8 +1552,6 @@
     }
   }
 }
-
-
 
 // .......................Jumbotron......................End
 
