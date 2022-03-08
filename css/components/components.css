@@ -1540,6 +1540,54 @@
   color: var(--text-47);
 }
 
+.profile_table_wrapper {
+  margin-bottom: 10rem;
+}
+
+@media (max-width: 1199px) {
+  .profile_table_wrapper {
+    margin-bottom: 5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .profile_table_wrapper {
+    margin-bottom: 3rem;
+  }
+}
+
+.profile_table_wrapper table {
+  border-top: 1px solid var(--text-c8);
+}
+
+.profile_table_wrapper td {
+  font-size: 1.8rem;
+  font-family: yugothib;
+  border-bottom: 1px solid var(--text-c8);
+  padding-top: 2.9rem;
+  padding-bottom: 2.9rem;
+}
+
+@media (max-width: 600px) {
+  .profile_table_wrapper td {
+    font-size: 1.4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    white-space: nowrap;
+  }
+}
+
+.profile_table_wrapper td:first-child {
+  font-weight: bold;
+  width: 16rem;
+}
+
+@media (max-width: 600px) {
+  .profile_table_wrapper td:first-child {
+    width: auto;
+  }
+}
+
 .menu_card_wrapper {
   margin-bottom: 10rem;
 }

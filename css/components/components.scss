@@ -1156,6 +1156,38 @@
     }
   }
 }
+.profile_table_wrapper {
+  margin-bottom: 10rem;
+  @media (max-width: 1199px) {
+    margin-bottom: 5rem;
+  }
+  @media (max-width: 600px) {
+    margin-bottom: 3rem;
+  }
+  table {
+    border-top: 1px solid var(--text-c8);
+  }
+  td {
+    font-size: 1.8rem;
+    font-family: yugothib;
+    border-bottom: 1px solid var(--text-c8);
+    padding-top: 2.9rem;
+    padding-bottom: 2.9rem;
+    @media (max-width: 600px){
+      font-size: 1.4rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      white-space: nowrap;
+    }
+    &:first-child {
+      font-weight: bold;
+      width: 16rem;
+      @media (max-width: 600px) {
+        width: auto;
+      }
+    }
+  }
+}
 
 // ....................Table Components ........................End
 
