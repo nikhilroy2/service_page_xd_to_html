@@ -803,6 +803,132 @@
     }
   }
 }
+.content_overlay_wrapper {
+  padding-top: 8rem;
+  padding-bottom: 9.6rem;
+  @media (max-width: 1199px) {
+    padding-top: 5rem;
+    padding-bottom: 6rem;
+    @media (max-width: 600px) {
+      padding-top: 3rem;
+      padding-bottom: 4rem;
+    }
+  }
+  .section_overlay_title {
+    text-align: center;
+    margin-bottom: 3.4rem;
+    @media (max-width: 1199px) {
+      margin-bottom: 2rem;
+    }
+    @media (max-width: 600px) {
+      margin-bottom: 1rem;
+    }
+    .overlay_txt {
+      font-family: trebuc;
+      font-size: 18rem;
+      color: rgba(11, 31, 91, 0.16);
+      position: relative;
+      @media (max-width: 1199px) {
+        font-size: 9rem;
+      }
+
+      @media (max-width: 600px) {
+        font-size: 7rem;
+      }
+
+      .txt_inner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: var(--text-48);
+        font-size: 3rem;
+        font-weight: bold;
+        white-space: nowrap;
+        @media (max-width: 1199px) {
+          font-size: 2rem;
+        }
+        @media (max-width: 600px) {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+  &.overlay_c1 {
+    background: var(--text-c1);
+    .overlay_txt {
+      color: rgba(255, 255, 255, 0.16);
+    }
+    .txt_inner {
+      color: var(--text-white) !important;
+    }
+    .section_overlay_body {
+      h3 {
+        color: var(--text-white) !important;
+      }
+    }
+  }
+  &.bg_img_overlay {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: url("../../img/overlay_bg.png") center 20% / cover no-repeat;
+      pointer-events: none;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+  }
+  .section_overlay_body {
+    h3 {
+      line-height: 5rem;
+    }
+    .section_overlay_row {
+      margin-top: 3.1rem;
+      @media (max-width: 600px) {
+        margin-top: 2.1rem;
+      }
+      * {
+        font-family: yugothib;
+      }
+      [class*="col-"] {
+        margin-bottom: 2.4rem;
+        @media (max-width: 600px) {
+          margin-bottom: 1.4rem;
+        }
+        &:nth-child(odd):not(:last-child) {
+          @media (min-width: 768px) {
+            padding-right: 4rem;
+          }
+        }
+      }
+      .col_wrapper {
+        background: var(--text-white);
+        padding: 2.5rem 1.8rem 1.8rem 1.8rem;
+        .item_title {
+          font-size: 2.6rem;
+          font-weight: bold;
+          text-align: center;
+          margin-bottom: 1.2rem;
+          @media (max-width: 600px) {
+            margin-bottom: 0.8rem;
+            font-size: 1.8rem;
+          }
+        }
+        .item_desc {
+          font-size: 1.8rem;
+          text-align: center;
+          @media (max-width: 600px) {
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
+  }
+}
 // ...................Content list Components. .................End
 
 // ....................Table Components ........................

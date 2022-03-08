@@ -1106,6 +1106,181 @@
   margin-bottom: 0px;
 }
 
+.content_overlay_wrapper {
+  padding-top: 8rem;
+  padding-bottom: 9.6rem;
+}
+
+@media (max-width: 1199px) {
+  .content_overlay_wrapper {
+    padding-top: 5rem;
+    padding-bottom: 6rem;
+  }
+}
+
+@media (max-width: 1199px) and (max-width: 600px) {
+  .content_overlay_wrapper {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+  }
+}
+
+.content_overlay_wrapper .section_overlay_title {
+  text-align: center;
+  margin-bottom: 3.4rem;
+}
+
+@media (max-width: 1199px) {
+  .content_overlay_wrapper .section_overlay_title {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .content_overlay_wrapper .section_overlay_title {
+    margin-bottom: 1rem;
+  }
+}
+
+.content_overlay_wrapper .section_overlay_title .overlay_txt {
+  font-family: trebuc;
+  font-size: 18rem;
+  color: rgba(11, 31, 91, 0.16);
+  position: relative;
+}
+
+@media (max-width: 1199px) {
+  .content_overlay_wrapper .section_overlay_title .overlay_txt {
+    font-size: 9rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .content_overlay_wrapper .section_overlay_title .overlay_txt {
+    font-size: 7rem;
+  }
+}
+
+.content_overlay_wrapper .section_overlay_title .overlay_txt .txt_inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: var(--text-48);
+  font-size: 3rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+@media (max-width: 1199px) {
+  .content_overlay_wrapper .section_overlay_title .overlay_txt .txt_inner {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .content_overlay_wrapper .section_overlay_title .overlay_txt .txt_inner {
+    font-size: 1.4rem;
+  }
+}
+
+.content_overlay_wrapper.overlay_c1 {
+  background: var(--text-c1);
+}
+
+.content_overlay_wrapper.overlay_c1 .overlay_txt {
+  color: rgba(255, 255, 255, 0.16);
+}
+
+.content_overlay_wrapper.overlay_c1 .txt_inner {
+  color: var(--text-white) !important;
+}
+
+.content_overlay_wrapper.overlay_c1 .section_overlay_body h3 {
+  color: var(--text-white) !important;
+}
+
+.content_overlay_wrapper.bg_img_overlay {
+  position: relative;
+}
+
+.content_overlay_wrapper.bg_img_overlay::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("../../img/overlay_bg.png") center 20%/cover no-repeat;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.content_overlay_wrapper .section_overlay_body h3 {
+  line-height: 5rem;
+}
+
+.content_overlay_wrapper .section_overlay_body .section_overlay_row {
+  margin-top: 3.1rem;
+}
+
+@media (max-width: 600px) {
+  .content_overlay_wrapper .section_overlay_body .section_overlay_row {
+    margin-top: 2.1rem;
+  }
+}
+
+.content_overlay_wrapper .section_overlay_body .section_overlay_row * {
+  font-family: yugothib;
+}
+
+.content_overlay_wrapper .section_overlay_body .section_overlay_row [class*="col-"] {
+  margin-bottom: 2.4rem;
+}
+
+@media (max-width: 600px) {
+  .content_overlay_wrapper .section_overlay_body .section_overlay_row [class*="col-"] {
+    margin-bottom: 1.4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .content_overlay_wrapper .section_overlay_body .section_overlay_row [class*="col-"]:nth-child(odd):not(:last-child) {
+    padding-right: 4rem;
+  }
+}
+
+.content_overlay_wrapper .section_overlay_body .section_overlay_row .col_wrapper {
+  background: var(--text-white);
+  padding: 2.5rem 1.8rem 1.8rem 1.8rem;
+}
+
+.content_overlay_wrapper .section_overlay_body .section_overlay_row .col_wrapper .item_title {
+  font-size: 2.6rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+
+@media (max-width: 600px) {
+  .content_overlay_wrapper .section_overlay_body .section_overlay_row .col_wrapper .item_title {
+    margin-bottom: 0.8rem;
+    font-size: 1.8rem;
+  }
+}
+
+.content_overlay_wrapper .section_overlay_body .section_overlay_row .col_wrapper .item_desc {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .content_overlay_wrapper .section_overlay_body .section_overlay_row .col_wrapper .item_desc {
+    font-size: 1.6rem;
+  }
+}
+
 .section_table_wrapper {
   background: rgba(112, 112, 112, 0.5);
   position: relative;
